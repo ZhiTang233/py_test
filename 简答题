@@ -1,0 +1,80 @@
+1.如何向列表中添加数据
+# 列表尾部添加
+列表.append（数据）
+# 列表指定下标位置添加
+列表.insert(下标，数据）
+# 列表合并
+列表.extend(列表）
+
+2.如何删除列表中的数据
+# 根据下标删除
+列表.pop(下标）
+# 根据数据值删除
+列表.remove(数据值)
+# 清空列表
+列表.clear()
+
+3.如何对列表中的数据进行排序操作
+# 升序
+列表.sort()
+# 降序
+列表.sort(reverse = True)
+
+4.如何定义元组以及元组的特点
+# 特点
+1.元组中的数据不能改变
+2.元组可以存放任意类型的数据
+3.元组使用小括号定义
+
+# 类实例化定义
+my_tuple = tuple()
+my_tuple = tuple(字符串/列表)
+# 直接使用（）定义
+my_tuple = ()
+my_tuple = (数据,)
+my_tuple = (数据， 数据，...)
+
+5. 如何定义字典
+# 类实例化的方式定义
+my_dict = dict()
+my_dict = dict(变量 = 数据， 变量 = 数据)
+# 直接使用{}定义(字面量)
+my_dict = {}
+my_dict = {key:value}
+
+6.如何添加和修改字典中的数据
+字典名[key] = 数据值
+
+7.如何访问字典中的数据
+#方式一
+字典名[key]
+
+#方式二 推荐
+字典.get(key)
+
+8.如何删除字典中的数据
+# 根据key值删除
+del 字典[key]
+
+字典.pop(key)
+
+9.如何遍历字典的键、值和键值对
+# 遍历字典的键key
+for k in 字典:
+    pass
+for k in 字典.keys():
+    pass
+
+# 遍历字典的值value
+for v in 字典.value():
+    pass
+
+# 遍历键值对
+for k,v in 字典.items():
+    pass
+
+数据类型: int flot bool str list tuple dict set
+可变不可变是指：数据所在内存是否允许修改，允许修改就是可变类型，不允许修改就是不可变类型
+可变类型：列表list 字典dict 集合set
+不可变类型：int float bool str tuple元组
+
