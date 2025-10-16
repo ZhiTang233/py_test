@@ -78,3 +78,11 @@ for k,v in 字典.items():
 可变类型：列表list 字典dict 集合set
 不可变类型：int float bool str tuple元组
 
+
+封装
+    私有和公有权限
+    属性的分类(实例属性，类属性)
+    方法的分类(实例方法，类方法，静态方法)
+继承
+多态
+
