@@ -1,8 +1,11 @@
 # 需求：小猫爱吃鱼，喝水，定义不带属性的类
 class Cat:
-    def eat(self):  # self会自动出现
+    @staticmethod
+    def eat():  # self会自动出现
         print('小猫爱吃鱼')
-    def drink(self):
+
+    @staticmethod
+    def drink():
         print('小猫要喝水')
 
 
