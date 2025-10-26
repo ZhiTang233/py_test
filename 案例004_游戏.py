@@ -14,6 +14,7 @@ import random
 
 class Game:
     top_score = 0
+    top_score_player = ''
 
     def __init__(self, name):
         self.name = name
@@ -32,8 +33,15 @@ class Game:
         print(f'本次得分{score}')
         if score > Game.top_score:
             Game.top_score = score
+            Game.top_score_player = self.name
 
 
 xw = Game('小王')
 xw.start_game()
+xh = Game('小红')
+xh.start_game()
+xl = Game('小李')
+xl.start_game()
+xz = Game('小张')
+xz.start_game()
 xw.show_top_score()
